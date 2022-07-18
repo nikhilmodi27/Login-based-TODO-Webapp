@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="notes.model.User" table="userlogin">
+		<id column="ID" name="id" type="int">
+		  <generator class="increment"></generator> 
+		 
+		</id>
+		<property column="FIRSTNAME" name="firstName" type="string" />
+		<property column="LASTNAME" name="lastName" type="string" />
+		<property column="USERNAME" name="username" type="string" />
+		<property column="PASSWORD" name="password" type="string" />
+	</class>
+</hibernate-mapping>
